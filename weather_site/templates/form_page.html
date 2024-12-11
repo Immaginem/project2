@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма для ввода городов и количества дней</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-size: 16px;
+            margin-bottom: 8px;
+            display: block;
+            color: #555;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Введите два города и количество дней</h2>
+    <form method="POST" action="/">
+        <label for="city1">Город отбытия:</label>
+        <input type="text" id="city1" name="city1" placeholder="Введите город отбытия" required><br>
+
+        <label for="city2">Город прибытия:</label>
+        <input type="text" id="city2" name="city2" placeholder="Введите город прибытия" required><br>
+
+        <label for="days">На сколько дней планируете поездку?:</label>
+        <input type="number" id="days" name="days" min="1" placeholder="Введите количество дней" required><br>
+
+        <input type="submit" value="Отправить">
+    </form>
+</div>
+
+<div class="footer">
+    <p>© 2024 Все права защищены</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+[
+   {
+      "city_name1": {
+         "temperature": null,
+         "humidity": null,
+         "wind_speed": null,
+         "probability_rain": null
+      },
+      "city_name2": {
+         "temperature": null,
+         "humidity": null,
+         "wind_speed": null,
+         "probability_rain": null
+      }
+   }
+]
